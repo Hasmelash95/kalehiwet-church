@@ -7,11 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}">
     <title>Kalehiwet Church | {% block title %}{% endblock %}</title>
 </head>
 <body>
     <header class="container">
-        <h1>Kalehiwet Church of Eritrea</h1>
+        <a class="logo-link" href="{% url 'home' %}">
+            <h1>
+                <img src="https://res.cloudinary.com/dmdrwfzlx/image/upload/v1690714730/KHCE/Kalehiwet_Church-logos_gbnjom.jpg" alt="Kalehiwet church logo">
+                Kalehiwet Church of Eritrea
+             </h1>
+        </a>    
         {% with request.resolver_match.url_name as url_name %}
         <ul class="nav nav-pills">
             <li class="nav-item">

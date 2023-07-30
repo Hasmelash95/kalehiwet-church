@@ -16,7 +16,7 @@
     <div class="col-md-10 mx-auto col-lg-5 p-5 text-dark">
         {% if user.is_authenticated %}
         <h2>Welcome {{ user }}!</h2>
-        <div>Not you?
+        <div>
             <a href="{% url 'account_logout' %}" class="btn btn-dark">Logout</a>
         </div>
         <br>
