@@ -19,5 +19,6 @@ from about_kce import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('about_kce.urls'), name='about_kce_urls')
+    path('', include('about_kce.urls'), name='about_kce_urls'),
+    path('accounts/', include('allauth.urls')),
 ]
