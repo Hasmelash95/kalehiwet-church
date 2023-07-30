@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+body {
+    font-family: 'Roboto', 'sans-serif'
+}
+
+h1,
+h2
+ {
+    font-family: 'Crimson Text', 'serif';
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Crimson Text', 'serif';
+    font-weight: 400;
+}
+
+.hero-box {
+    background: url('https://res.cloudinary.com/dmdrwfzlx/image/upload/v1690711541/KHCE/pexels-rdne-stock-project-5875398_ijzey3.jpg') no-repeat no-repeat;
+    background-size: cover;
+}
