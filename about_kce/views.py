@@ -1,6 +1,8 @@
 from django.shortcuts import render, HttpResponse
+from django.views import generic, View
 
 # Create your views here.
 
 def views_test(request):
-    return HttpResponse("Does this work?")
+    
+    return render(request, 'index.html', None)
