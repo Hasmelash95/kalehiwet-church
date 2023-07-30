@@ -25,7 +25,7 @@
         </div>
         {% else %}
         <div>
-            Login to connect!
+            Connect now!
             <a href="{% url 'account_login' %}" class="btn btn-primary">Login</a>
         </div>
         <br>
@@ -35,6 +35,43 @@
         </div>
         {% endif %}
     </div>
+    </div>
+</section>
+<section class="container px-4 py-5">
+    <h2 class="pb-2 text-center border-bottom">Website Features</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-1 mb-2">
+                <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h3>About Us</h3>
+            <p>
+               Learn more about our organization. Our vision, mission and the dedicated team behind it all. You can also learn all
+               about our history and our founding members.
+            </p>
+            <a href="#">Learn more</a>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-1 mb-2">
+                <i class="fa-solid fa-church"></i>
+            </div>
+            <h3>Ministries & Programs</h3>
+            <p>
+               We detail the various ministries and initiaives that we are involved in. Click the link below to also learn about our discipleship
+               programs and resources.
+            </p>
+            <a href="#">Learn more</a>
+        </div>
+        <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-1 mb-2">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h3>Donate</h3>
+            <p>
+               Do you wish to contribute to our cause? Click the link below to find out how. 
+            </p>
+            <a href="#">Donate</a>
+        </div>
     </div>
 </section>
 {% endblock %}
