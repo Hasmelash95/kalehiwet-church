@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Kalehiwet Church of Eritrea</h1>
+    <header class="container">
+        <h1>Kalehiwet Church of Eritrea</h1>
+        {% with request.resolver_match.url_name as url_name %}
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="{% url 'home' %}" class="nav-link {% if url_name == 'home' %}active"
+                aria-current="page{% endif %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Ministries & Programs</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Community</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Donate</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact Us</a>
+            </li>
+        </ul>
+        {% endwith %}
+    </header>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
