@@ -32,7 +32,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    '8000-hasmelash95-kalehiwetch-wav8l8opyt6.ws-eu102.gitpod.io'
+    '8000-hasmelash95-kalehiwetch-wav8l8opyt6.ws-eu102.gitpod.io',
+    'kalehiwet-church.onrender.com'
 ]
 
 
