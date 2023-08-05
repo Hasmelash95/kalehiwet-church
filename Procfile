@@ -1,0 +1,1 @@
+web: gunicorn kalehiwet-church.wsgi:application
