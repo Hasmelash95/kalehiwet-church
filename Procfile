@@ -1,1 +1,1 @@
-web: gunicorn kalehiwet-church.wsgi:application
+web: gunicorn kalehiwet_church.wsgi:application
